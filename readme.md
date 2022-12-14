@@ -31,12 +31,12 @@ Digital representations of audio signals most often begin as the relationship of
 
 If frequency is converted from Hertz to the Mel Scale, a representation of frequency that mimics the perception of sound by humans and hence why it’s used often in machine learning, the spectrogram is called a Mel Spectrogram. 
 
-![Example Mel Spectrogram](example_mel_spectrogram.png)
+![Example Mel Spectrogram](images/example_mel_spectrogram.png)
 
 ## Mel Frequency Cepstral Coefficients (MFCC)
 The Mel Frequency Cepstrum (MFC) is a discrete cosine transformation (DCT) on the log of the magnitude of the Fourier spectrum which is obtained by applying a Fourier transform on the time signal. MFCC’s are coefficients that collectively make up an MFC. MFCC's visually represent features of the audio remarkably well and therefore can be passed into a convolutional neural networks for classification.
 
-![Example MFCC](example_mfcc.png)
+![Example MFCC](images/example_mfcc.png)
 
 ---
 ## **2 Model Architecture** 
