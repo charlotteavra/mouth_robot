@@ -52,8 +52,20 @@ The Mel Frequency Cepstrum (MFC) is a discrete cosine transformation (DCT) on th
 ## **3 Training and Testing on Robot Audio Signals**
 The goal for this part was to ensure the model architecture and hyperparameters could effectively classify robot audio signlas. 1,120 robot audio signals were split 80/20 into training and validation datasets. 
 
+Hyperparameters used:
+* Adam optimizer (also tried Adadelta) 
+* Learning rate = 0.0001
+* Epochs = 30 
+* Batchsize = 20 
+
 ---
 ## **4 Training on Human Audio Signals and Testing on Robot Audio Signals**
 The goal here was to learn the model on audio signals produced by humans, specifically 4,500 signals from the Tone Perfect Multimodal Database, and be tested on 1,120 audio signals produced by the robot to determine if the robot sounds were human-like.
 
 We wanted the model to generalize enough such that it could maintain high accuracy given a validation set of MFCCs that may look very different from what it was trained on, but still reflect the human-likeness of the validation set through its softmax output predictions: high value predictions for human-like sounds and low value predictions for non-human-like sounds. 
+
+Hyperparameters used:
+* Adam optimizer  
+* Learning rate = 0.0001
+* Epochs = 30 
+* Batchsize = 20 
