@@ -48,6 +48,8 @@ The Mel Frequency Cepstrum (MFC) is a discrete cosine transformation (DCT) on th
 * Dropout for every fully-connected layer
 * Softmax activation for last layer in MLP
 
+![Model Structure](images/model_structure.png)
+
 ---
 ## **3 Training and Testing on Robot Audio Signals**
 The goal for this part was to ensure the model architecture and hyperparameters could effectively classify robot audio signlas. 1,120 robot audio signals were split 80/20 into training and validation datasets. 
